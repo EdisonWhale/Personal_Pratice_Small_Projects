@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Real-time facial emotion recognition</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    }
+
+    #content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+    }
+
+    #result {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+
+    #no-camera {
+      display: none;
+      color: rgb(140, 0, 255);
+      font-weight: bold;
+      margin-top: 25px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h1>Real-time facial emotion recognition</h1>
+    <video id="video" width="720" height="560" autoplay muted></video>
+    <div id="result">Your emtion：</div>
+    <button id="capture" class="btn btn-primary">Facial emtion capture</button>
+    <div id="no-camera">No camera detected. Please allow the camera to use.</div>
+  </div>
+</body>
+</html>

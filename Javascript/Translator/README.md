@@ -45,3 +45,11 @@ Feel free to fork this repository and make any improvements or modifications you
 ## License
 
 This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
+
+
+Made with ❤️ by Edison<br>
+www.Edisonwhale.com
+
+Have any question?  
+Email me!  
+Edison@gatech.edu

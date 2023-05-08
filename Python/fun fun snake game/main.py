@@ -201,24 +201,6 @@ class Board:
     def is_snake_on_food(self):
         return self.snake.body[0] == self.food.position
 
-class Food:
-    def __init__(self, snake):
-        self.snake = snake
-        self.position = self.generate()
-
-    def generate(self):
-        while True:
-            x = random.randrange(0, WIDTH, CELL_SIZE)
-            y = random.randrange(0, HEIGHT, CELL_SIZE)
-            if (x, y) not in self.snake.body:
-                return (x, y)
-
-    def is_eaten(self):
-        return self.snake.body[0] == self.position
-
-    def draw(self, screen):
-        pygame.draw.rect(screen, RED, (self.position[0], self.position[1], CELL_SIZE, CELL_SIZE))
-
 if __name__ == "__main__":
     game = Game()
     game.run()

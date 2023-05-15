@@ -129,12 +129,12 @@ window.onload = () => {
     }
 };
 
-// 每当用户在编辑器中进行输入时，就保存他们的输入
+
 writingArea.addEventListener("input", () => {
     localStorage.setItem("savedText", writingArea.innerHTML);
 });
 
-// 当页面加载时，检查是否有已保存的文本，如果有，就恢复
+
 window.onload = () => {
     intializer();
     const savedText = localStorage.getItem("savedText");

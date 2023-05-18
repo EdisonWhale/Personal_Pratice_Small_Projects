@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "assets",
+			"path": "../../../Day #30 - Music Player App/assets"
+		},
+		{
+			"name": "Ez Music Play App",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Ez Music Play App"
+	}
+}

@@ -58,10 +58,10 @@ function checkAchievements() {
   const achievementsDiv = document.querySelector("#achievements");
   if (streak === 3) {
     achievementsDiv.textContent = "Achievement: 3 in a row!";
+  } else if (streak === 5) {
+    achievementsDiv.textContent = "Achievement: 5 in a row!";
   } else if (streak === 10) {
     achievementsDiv.textContent = "Achievement: 10 in a row!";
-  } else if (streak === 20) {
-    achievementsDiv.textContent = "Achievement: 20 in a row!";
   }
 }
 
